@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Decryptor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSA Decryptor</h1>
+        <form id="decryptForm">
+            <label for="N">N:</label>
+            <textarea id="N" required></textarea>
+
+            <label for="e1">e1:</label>
+            <input type="number" id="e1" value="3" required>
+
+            <label for="e2">e2:</label>
+            <input type="number" id="e2" value="65537" required>
+
+            <label for="c1">c1:</label>
+            <textarea id="c1" required></textarea>
+
+            <label for="c2">c2:</label>
+            <textarea id="c2" required></textarea>
+
+            <button type="submit">Decrypt</button>
+        </form>
+        <h2>Decrypted Message:</h2>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
